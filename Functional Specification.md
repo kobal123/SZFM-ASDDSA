@@ -14,6 +14,10 @@ ami alapján képes lenne számok(nem csak egész számok) alapvető műveletekk
    4. Képes legyen függvények használatára
       1. ^, √, MOD
    5. Negatív számok kezelése
+   6. Ne lehessen betűt írni csak számokat
+   7. Ne legyen hibás sytanx mint pl: Gyök alatt negatív szám
+   8. PI konstants
+   9. Euler-féle szám konstansként
 
 # Használati Esetek
 Az adott felhasználó képes lesz két számmal alapvető és komplexebb műveletek végézésre ezen műveletek listázva találhatóak a követelménylistában. Ezek melett a felhasználónak az előző műveletei is elérhetőek lesznek számára amiket akár visszatölthet és további műveleteket végezhet majd vele.
