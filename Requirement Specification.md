@@ -19,3 +19,14 @@ Ezek melett képes legyen arra, hogy eltárolja megadott műveleteket.
    1. Ezen számok pontos kíírása
    2. Nem csak egész számok kezelése
    3. Ezen számok és műveletek pontos tárolása
+
+# 5
+A rendszerre vonatkozó szabályok a web felület szabványos eszközökkel készüljön, html/css/javascript. A képek jpeg és png formátumúak lehetnek.
+
+# 6
+1. Számológép
+   1. Reszponzív Design
+   2. Gyors és könnyen használható
+   3. Alapvető műveletek
+   4. Komplexebb műveletek (gyök, négyzet, maradék)
+   5. Adott kalkuláció megjegyzése egy ideig
