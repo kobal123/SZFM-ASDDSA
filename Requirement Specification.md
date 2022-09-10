@@ -30,3 +30,8 @@ A rendszerre vonatkozó szabályok a web felület szabványos eszközökkel kés
    3. Alapvető műveletek
    4. Komplexebb műveletek (gyök, négyzet, maradék)
    5. Adott kalkuláció megjegyzése egy ideig
+
+# 7
+Reszponzív felület - Mobilon, Tableten, PC-n igazodik a
+képernyőhöz a felület mérete, azaz több eszközön is probléma nélkül
+üzemelhet.
