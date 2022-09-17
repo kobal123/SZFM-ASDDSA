@@ -23,4 +23,6 @@ ami alapján képes lenne számok(nem csak egész számok) alapvető műveletekk
 
 4\. Használati Esetek
 ===============================
-Az adott felhasználó képes lesz két számmal alapvető és komplexebb műveletek végézésre ezen műveletek listázva találhatóak a követelménylistában. Ezek melett a felhasználónak az előző műveletei is elérhetőek lesznek számára amiket akár visszatölthet és további műveleteket végezhet majd vele.
+- A User megtudja nyitni a webalkalmazást bármilyen eszközről. A webalkalmazás felületén minden olyan gomb megnyomására képes, amely a matematikai műveletek elvégzésére szolgál.
+- A User-nek képesnek kell lennie két számmal alapvető és komplexebb matematikai műveletek elvégzésére. (Ezek a műveletek listázva megtalálhatóak a követelménylistában.)
+- Jogosultsága lesz az előzmények megtekintésére, ahol az általa elvégzett műveleteket visszatudja követni, ezeket visszatudja tölteni újra, majd további műveleteket tud majd végezni vele.
