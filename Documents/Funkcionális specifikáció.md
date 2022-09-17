@@ -68,4 +68,4 @@ képernyőhöz a felület mérete, azaz több eszközön is probléma nélkül
 -- Egyszerű betűszín alkalmazása -> egyszerű fekete betűszín
 - A weboldalon lévő adatok szerkeszthetővé tétele/Könnyű szerkeszthetőség\
 -- A már beütött számok szerkeszthetősége\
--- A már nem kívánatos számok törölhetősége\
+-- A már nem kívánatos számok törölhetősége
