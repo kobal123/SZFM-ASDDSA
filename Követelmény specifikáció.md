@@ -17,8 +17,7 @@ Ezek melett képes legyen arra, hogy eltárolja megadott műveleteket.
 3\. Jelenlegi Üzleti Folyamatok 
 ====================
 
-1. Komplexebb kalkuláció
-   1. Papírra való leírása ezen folyamatoknak hogy megjegyezzék ezeket.
+A mai világban már rengeteg dolgot tudunk elvégezni a különböző elektronikai eszközökkel, ahelyet hogy a hagyományos megoldásokat választanánk. Az újabb módszerekkel való feladatvégzés sokkal gyorsabb és korszerűbb. A jelenlegi világban a munkaadók is próbálnak odafigyelni ezekre a dolgokra, hogy könnyítsék az alkalmazottak feladatait, ezért keresünk korszerűbb módszereket a feladatuk elvégzésére. Jelenleg az alkalmazottaink a számítási feladatokat papír alapon végzik el, ami egy átlagos napon is rengeteg papírhulladékot jelent.
 
 4\. Igényelt Üzleti Folyamatok 
 ===============================
