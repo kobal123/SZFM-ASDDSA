@@ -61,7 +61,7 @@ de hordozható eszközökön (okostelefonok,táblagépek) is működni fog.
 
 # Implementációs terv
 
-8\. Tesztterv
+6\. Tesztterv
 ==============
 Még mielőtt egy alkalmazás bármilyen végfelhasználóhoz kerülhet nagyon fontos szerepet tölthet be a teszttervek.
 
@@ -94,20 +94,13 @@ Operációs rendszer:
 
 -   Windows 10 21H2 stabil
 
-
-9\. Telepítési terv
-===================
-
 7\. Architekturális terv
 ===================
 
 8\. Implementációs terv
 ===================
 
-9\. Tesztterv
-===================
-
-10\. Telepítési terv
+9\. Telepítési terv
 ===================
 
 A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges (Google Chrome, Firefox, Opera, Safari, Microsoft Edge), külön szoftver nem kell hozzá.
