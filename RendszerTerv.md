@@ -11,7 +11,14 @@ Annak érdekében, hogy átlátható maradjon az alkalmazás, a design-ra nagy f
 
 Az egyszerűség részét képezi az, hogy egy olyan számológép alkalmazást hozunk létre, melynek használatához fiókösszekapcsolás illetve regisztráció nem szükséges.
 
-# Üzleti folyamatok modellje
+2\. Üzleti folyamatok modellje
+=================
+
+- Üzleti szereplők: USER, Fejlesztők
+- Üzleti folyamatok:
+-- Számítások elvégzése
+-- Gombok használata (számok bevitele, műveletek)
+-- Hibakezelés! USER <-> Fejlesztők
 
 # Követelmények
 
@@ -28,10 +35,10 @@ Ennek a megoldásnak köszönhetően ezek a folyamatok gyorsabbak lesznek, illet
 
 **Rendszerszereplők:**
 - User
--- Számológépen gombok kattinthatósága
--- Matematikai művelet elvégzése, véglegesítése
--- Végeredmény kiírásának olvasása
--- Előzmények megtekintése, felhasználása
+    - Számológépen gombok kattinthatósága
+    - Matematikai művelet elvégzése, véglegesítése
+    - Végeredmény kiírásának olvasása
+    - Előzmények megtekintése, felhasználása
 
 **Menü hierarchiák**
 - Menü rendszerre nincs szükség, a webalkalmazás megnyitásakor egyből a számológép fog megjelenni.
