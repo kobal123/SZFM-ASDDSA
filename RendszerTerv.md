@@ -35,10 +35,10 @@ Ennek a megoldásnak köszönhetően ezek a folyamatok gyorsabbak lesznek, illet
 
 **Rendszerszereplők:**
 - User
--- Számológépen gombok kattinthatósága
--- Matematikai művelet elvégzése, véglegesítése
--- Végeredmény kiírásának olvasása
--- Előzmények megtekintése, felhasználása
+    - Számológépen gombok kattinthatósága
+    - Matematikai művelet elvégzése, véglegesítése
+    - Végeredmény kiírásának olvasása
+    - Előzmények megtekintése, felhasználása
 
 **Menü hierarchiák**
 - Menü rendszerre nincs szükség, a webalkalmazás megnyitásakor egyből a számológép fog megjelenni.
