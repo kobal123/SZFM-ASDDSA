@@ -110,6 +110,33 @@ Operációs rendszer:
 8\. Implementációs terv
 ===================
 
+A rendszer egyetlen **HTML** oldalból áll, ehhez a szükséges funkcionalitást **Javascript** biztosítja majd.
+Az odlal megjelenése és elrendezése egy **CSS** stíluslappal történik.
+Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és
+úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság,
+és könnyebb bővítés érdekében.
+
+### Számológép számítási előzmények
+
+Az előzmény gombra kattintva több element jelenik meg a számológép mellett egymás alatt,
+amelyek az eddigi számításokat tartalmazzák.
+A megvalósításhoz egy sor adatszerkezet megfelelő lesz. Ha a felhasználó egy új műveletet végez,
+akkor az előzmények tetejére kerül. Ha már több mint 15 előzmény van,
+akkor a legrégebbi előzmények törlésre kerülnek.
+
+
+### Teljes bemenet törlése
+
+A C gombra kattintva az eddig beírt teljes művelet törölni kell.
+
+### Jelenlegi bemenet törlése
+
+A CE gombra kattintva az jelenlegi művelet törölni kell.
+
+### Egyetlen karakter törlése
+
+A DEL gombra kattintva ez eddig beírt műveletből egyetlen karaktert kell törölni.
+
 9\. Telepítési terv
 ===================
 
