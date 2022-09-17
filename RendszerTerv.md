@@ -55,7 +55,47 @@ de hordozható eszközökön (okostelefonok,táblagépek) is működni fog.
 ● Fejlesztői eszközök:
 - Visual Studio Code
 
-6\. Absztrakt Domain Modell
+# Absztrakt Domain Modell
+
+# Architekturális terv
+
+# Implementációs terv
+
+8\. Tesztterv
+==============
+Még mielőtt egy alkalmazás bármilyen végfelhasználóhoz kerülhet nagyon fontos szerepet tölthet be a teszttervek.
+
+Maga a tesztterv segítségével tudunk kritikus funckiók helyes működéséről meggyőződni ez álltal biztosítani helyes működését.
+
+Maga a szoftver kiadása előtt 2 külön fajta tesztet szeretnénk végrehajtani ez által biztosítani azt hogy a szoftver képes legyen az elvártakra és hibamentesen fusson.
+
+### Fejlesztői Teszt
+
+A fejlesztői tesztet kifejezetten azok fogják végezni akik az szoftvert fejlesztették.
+
+Ezen teszt során azt fogjuk nézni hogy az alkalmazás hogyan fog reagálni különböző böngészői környezetekben, illetve meggyőződünk arról hogy az implementált funkciók működőképesek.
+
+### Felhasználó Teszt
+
+A felhasználó tesztet kifejezetten a fejlesztő csapatton kívül eső emberek fogják végezni.
+
+Ennek a tesztnek a célja, hogy a fejlesztők visszajelzést kapjanak a felhasználóktól, hogy az alkalmazás működéséről pontos információt kapjanak.
+
+Ha bármilyen hibába fut a felhasználó, akkor egy tesztelési naplóban leírnak minden fontosabb információt a hibával kapcsolatban és továbbítják a fejlesztők felé. Ha a probléma egyértelműen javítható akkor a fejlesztők egyszerűen kijavítják, viszont ha valami komplexebb gond van akkor a fejlesztők kapcsolatba lépnek a felhasználóval hogy szűkíteni tudják a problémát és végül ki tudják javítani.
+
+#### Tesztelésre használt eszközök
+
+Böngészők:
+
+-   Google Chrome 105.0.5195.127 stabil asztali verzió
+-   Mozilla Firefox 104.0.2 stabil asztali verzió
+  
+Operációs rendszer:
+
+-   Windows 10 21H2 stabil
+
+
+9\. Telepítési terv
 ===================
 
 7\. Architekturális terv
