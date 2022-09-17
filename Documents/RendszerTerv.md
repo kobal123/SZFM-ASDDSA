@@ -70,6 +70,8 @@ de hordozható eszközökön (okostelefonok,táblagépek) is működni fog.
 
 ● Fejlesztői eszközök:
 - Visual Studio Code
+- Notepad++
+- Webstorm
 
 6\. Tesztterv
 ==============
