@@ -15,7 +15,26 @@ Az egyszerűség részét képezi az, hogy egy olyan számológép alkalmazást 
 
 # Követelmények
 
-# Funkcionális terv
+5\. Funkcionális terv
+===================
+
+Webalkalmazásunk célja, hogy az alkalmazottaink munkafolyamatainak során felmerülő számítási problémákat már ne csak papíron tudják elvégezni, hanem a webalkalmazásunkban is.
+Ennek a megoldásnak köszönhetően ezek a folyamatok gyorsabbak lesznek, illetve kevesebb lesz a hibás megoldások esélye is.
+
+**Törekedünk az alkalmazás:**
+- átláthatóságára,
+- egyszerűségére,
+- kényelmes használatára.
+
+**Rendszerszereplők:**
+- User
+-- Számológépen gombok kattinthatósága
+-- Matematikai művelet elvégzése, véglegesítése
+-- Végeredmény kiírásának olvasása
+-- Előzmények megtekintése, felhasználása
+
+**Menü hierarchiák**
+- Menü rendszerre nincs szükség, a webalkalmazás megnyitásakor egyből a számológép fog megjelenni.
 
 # Fizikai Környzet 
 
