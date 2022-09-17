@@ -40,3 +40,14 @@ képernyőhöz a felület mérete, azaz több eszközön is probléma nélkül
 **JavaScript** - A JavaScript egy programozási nyelv. Objektumorientált, prototípus-alapú szkriptnyelv.
 
 **Multiplatform** - Platformfüggetlenség. Több környezetben futtatható alkalmazás.
+
+6\. Igényelt üzleti folyamatok modellje
+==============================
+- Online elérhető, ingyenes rendszer kialakítása\
+-- Webes megjelenés
+- Elegáns design kialakítása\
+-- Letisztult , sima, de elegáns színű háttér
+-- Egyszerű betűszín alkalmazása -> egyszerű fekete betűszín
+- A weboldalon lévő adatok szerkeszthetővé tétele/Könnyű szerkeszthetőség\
+-- A már beütött számok szerkeszthetősége\
+-- A már nem kívánatos számok törölhetősége\
