@@ -1,11 +1,16 @@
 1\. Áttekintés
 ==============
+
 Egy olyan alapvető számológépet fejlesztünk ami elérhető lesz minden Operációs Rendeszern amin webböngésző futtatható. Ezen számológép alakalamas lesz a négy alapvető művelet elvégézésére + / - * , ezek mellett képes lesz négyzetre emelni, gyököt vonni, és modulo műveletekre.
 
 2\. Jelenlegi Helyzet 
 =====================
+
 Megrendelő szeretne egy olyan rendszert
-ami alapján képes lenne számok(nem csak egész számok) alapvető műveletekkel való elvégzését, ezek melett képes lenne gyök/négyzet/maradék-os műveletekre is. Kifejezetten fontos ezen számok tárolása és az hogy bármilyen olyan operációs rendszeren elérhető legyen ahol webböngésző van. Ezek melett kifejezetten fontosnak találja azt hogy ez mobilon, tableten, PC-n igazodik a képernyőhöz a felület mérete. Ezeket kifejzetten megköveteli hogy szabványos webes eszközökkel keszítsük el mint: html/css/js és megköti a képformátumokat jpeg és png-re
+ami alapján képes lenne számok(nem csak egész számok) alapvető műveletekkel való elvégzését, ezek melett képes lenne gyök/négyzet/maradék-os műveletekre is.
+Kifejezetten fontos ezen számok tárolása és az hogy bármilyen olyan operációs rendszeren elérhető legyen ahol webböngésző van.
+Ezek melett kifejezetten fontosnak találja azt hogy ez mobilon, tableten, PC-n igazodik a képernyőhöz a felület mérete.
+Ezeket kifejzetten megköveteli, hogy szabványos webes eszközökkel keszítsük el mint: html/css/js és megköti a képformátumokat jpeg és png-re
 
 3\. Követelménylista
 ====================
@@ -24,16 +29,27 @@ ami alapján képes lenne számok(nem csak egész számok) alapvető műveletekk
 4\. Jelenlegi Üzleti Folyamatok 
 ====================
 
-A mai világban már rengeteg dolgot tudunk elvégezni a különböző elektronikai eszközökkel, ahelyet hogy a hagyományos megoldásokat választanánk. Az újabb módszerekkel való feladatvégzés sokkal gyorsabb és korszerűbb. A jelenlegi világban a munkaadók is próbálnak odafigyelni ezekre a dolgokra, hogy könnyítsék az alkalmazottak feladatait, ezért keresünk korszerűbb módszereket a feladatuk elvégzésére. Jelenleg az alkalmazottaink a számítási feladatokat papír alapon végzik el, ami egy átlagos napon is rengeteg papírhulladékot jelent.
+A mai világban már rengeteg dolgot tudunk elvégezni a különböző elektronikai eszközökkel, ahelyet hogy a hagyományos megoldásokat választanánk.
+Az újabb módszerekkel való feladatvégzés sokkal gyorsabb és korszerűbb.
+A jelenlegi világban a munkaadók is próbálnak odafigyelni ezekre a dolgokra, hogy könnyítsék az alkalmazottak feladatait, ezért keresünk korszerűbb módszereket a feladatuk elvégzésére.
+Jelenleg az alkalmazottaink a számítási feladatokat papír alapon végzik el, ami egy átlagos napon is rengeteg papírhulladékot jelent.
 
 5\. Használati Esetek
 ===============================
+
 - A User megtudja nyitni a webalkalmazást bármilyen eszközről. A webalkalmazás felületén minden olyan gomb megnyomására képes, amely a matematikai műveletek elvégzésére szolgál.
 - A User-nek képesnek kell lennie két számmal alapvető és komplexebb matematikai műveletek elvégzésére. (Ezek a műveletek listázva megtalálhatóak a követelménylistában.)
 - Jogosultsága lesz az előzmények megtekintésére, ahol az általa elvégzett műveleteket visszatudja követni, ezeket visszatudja tölteni újra, majd további műveleteket tud majd végezni vele.
 
-6\. Fogalomszótár
+
+6\. Képernyőterv
+===============================
+
+![Képernyő terv](kepernyo_terv.png)
+
+7\. Fogalomszótár
 =========================
+
 **Reszponzív felület** - Mobilon, Tableten, PC-n igazodik a
 képernyőhöz a felület mérete, azaz több eszközön is probléma nélkül
 üzemelhet.
