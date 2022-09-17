@@ -20,9 +20,10 @@ Az egyszerűség részét képezi az, hogy egy olyan számológép alkalmazást 
 -- Gombok használata (számok bevitele, műveletek)
 -- Hibakezelés! USER <-> Fejlesztők
 
-# Követelmények
+3\. Követelmények
+===================
 
-5\. Funkcionális terv
+4\. Funkcionális terv
 ===================
 
 Webalkalmazásunk célja, hogy az alkalmazottaink munkafolyamatainak során felmerülő számítási problémákat már ne csak papíron tudják elvégezni, hanem a webalkalmazásunkban is.
@@ -43,7 +44,8 @@ Ennek a megoldásnak köszönhetően ezek a folyamatok gyorsabbak lesznek, illet
 **Menü hierarchiák**
 - Menü rendszerre nincs szükség, a webalkalmazás megnyitásakor egyből a számológép fog megjelenni.
 
-# Fizikai Környzet 
+5\. Fizikai Környzet 
+===================
 
 ● Az alkalmazás webes platformra készül, főként desktopra,
 de hordozható eszközökön (okostelefonok,táblagépek) is működni fog.
@@ -53,15 +55,21 @@ de hordozható eszközökön (okostelefonok,táblagépek) is működni fog.
 ● Fejlesztői eszközök:
 - Visual Studio Code
 
-# Absztrakt Domain Modell
-
-# Architekturális terv
-
-# Implementációs terv
-
-# Tesztterv
-
-9\. Telepítési terv
+6\. Absztrakt Domain Modell
 ===================
 
-A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges (Google Chrome, Firefox, Opera, Safari, Microsoft Edge), külön szoftver nem kell hozzá. A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
+7\. Architekturális terv
+===================
+
+8\. Implementációs terv
+===================
+
+9\. Tesztterv
+===================
+
+10\. Telepítési terv
+===================
+
+A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges (Google Chrome, Firefox, Opera, Safari, Microsoft Edge), külön szoftver nem kell hozzá.
+
+A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
