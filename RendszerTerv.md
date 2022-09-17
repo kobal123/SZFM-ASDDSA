@@ -23,6 +23,22 @@ Az egyszerűség részét képezi az, hogy egy olyan számológép alkalmazást 
 3\. Követelmények
 ===================
 
+Funkcionális követelmények:
+-------------------------
+Az elkszítendő program egy böngészőbe futó html oldal.
+Az alkalmazás lehetőséget ad arra hogy a felhasználó alapvető számokkal műveleteket tudjon végrehajtani.
+Nem egész számok esetén számok pontos kiírása 5 tizedes jegyig.
+Megadott művelet és annak eredményeinek tárolása
+Képes legyen a felhasználó alapvető műveleteket végezni az általa megadott számokkal mint pl: + - / *
+Képes legyen a felhasználó pár alapvető függvényt használni mint pl: ^ √ MOD
+Képes legyen negatív számokkal is műveleteket végezni ez általi hibák lekezelése pl Gyök alatt negatív szám lekezelése
+Alapvető konstant értékek tárolása: PI, Euler-féle szám
+
+Nem funkcionális követelmények:
+-------------------------
+Tüneményes felhasználói felület
+
+
 4\. Funkcionális terv
 ===================
 
