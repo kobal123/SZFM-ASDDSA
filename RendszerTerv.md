@@ -34,3 +34,8 @@ de hordozható eszközökön (okostelefonok,táblagépek) is működni fog.
 # Implementációs terv
 
 # Tesztterv
+
+9\. Telepítési terv
+===================
+
+A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges (Google Chrome, Firefox, Opera, Safari, Microsoft Edge), külön szoftver nem kell hozzá. A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
