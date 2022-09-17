@@ -36,7 +36,7 @@ Ezeket kifejzetten megköveteli hogy szabványos webes eszközökkel keszítsük
 |K08| PI konstants|
 |K09| Euler-féle szám konstansként|
 
-4\. Jelenlegi Üzleti Folyamatok 
+4\. Jelenlegi Üzleti Folyamatok modellje
 ====================
 
 A mai világban már rengeteg dolgot tudunk elvégezni a különböző elektronikai eszközökkel, ahelyet hogy a hagyományos megoldásokat választanánk.
@@ -44,7 +44,18 @@ Az újabb módszerekkel való feladatvégzés sokkal gyorsabb és korszerűbb.
 A jelenlegi világban a munkaadók is próbálnak odafigyelni ezekre a dolgokra, hogy könnyítsék az alkalmazottak feladatait, ezért keresünk korszerűbb módszereket a feladatuk elvégzésére.
 Jelenleg az alkalmazottaink a számítási feladatokat papír alapon végzik el, ami egy átlagos napon is rengeteg papírhulladékot jelent.
 
-5\. Használati Esetek
+5\. Igényelt üzleti folyamatok modellje
+==============================
+- Online elérhető, ingyenes rendszer kialakítása\
+-- Webes megjelenés
+- Elegáns design kialakítása\
+-- Letisztult , sima, de elegáns színű háttér
+-- Egyszerű betűszín alkalmazása -> egyszerű fekete betűszín
+- A weboldalon lévő adatok szerkeszthetővé tétele/Könnyű szerkeszthetőség\
+-- A már beütött számok szerkeszthetősége\
+-- A már nem kívánatos számok törölhetősége
+
+6\. Használati Esetek
 ===============================
 
 - A User megtudja nyitni a webalkalmazást bármilyen eszközről. A webalkalmazás felületén minden olyan gomb megnyomására képes, amely a matematikai műveletek elvégzésére szolgál.
@@ -52,12 +63,12 @@ Jelenleg az alkalmazottaink a számítási feladatokat papír alapon végzik el,
 - Jogosultsága lesz az előzmények megtekintésére, ahol az általa elvégzett műveleteket visszatudja követni, ezeket visszatudja tölteni újra, majd további műveleteket tud majd végezni vele.
 
 
-6\. Képernyőterv
+7\. Képernyőterv
 ===============================
 
 ![Képernyő terv](kepernyo_terv.png)
 
-7\. Fogalomszótár
+8\. Fogalomszótár
 =========================
 
 **Reszponzív felület** - Mobilon, Tableten, PC-n igazodik a
@@ -71,14 +82,3 @@ képernyőhöz a felület mérete, azaz több eszközön is probléma nélkül
 **JavaScript** - A JavaScript egy programozási nyelv. Objektumorientált, prototípus-alapú szkriptnyelv.
 
 **Multiplatform** - Platformfüggetlenség. Több környezetben futtatható alkalmazás.
-
-6\. Igényelt üzleti folyamatok modellje
-==============================
-- Online elérhető, ingyenes rendszer kialakítása\
--- Webes megjelenés
-- Elegáns design kialakítása\
--- Letisztult , sima, de elegáns színű háttér
--- Egyszerű betűszín alkalmazása -> egyszerű fekete betűszín
-- A weboldalon lévő adatok szerkeszthetővé tétele/Könnyű szerkeszthetőség\
--- A már beütött számok szerkeszthetősége\
--- A már nem kívánatos számok törölhetősége
