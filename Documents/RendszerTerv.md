@@ -146,3 +146,4 @@ A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
 
 10\. Absztrakt Domain Modell
 ===================
+![Abszrakt Domain Modell](./AbsztraktDomainModell.png)
