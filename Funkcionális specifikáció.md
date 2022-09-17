@@ -26,3 +26,17 @@ ami alapján képes lenne számok(nem csak egész számok) alapvető műveletekk
 - A User megtudja nyitni a webalkalmazást bármilyen eszközről. A webalkalmazás felületén minden olyan gomb megnyomására képes, amely a matematikai műveletek elvégzésére szolgál.
 - A User-nek képesnek kell lennie két számmal alapvető és komplexebb matematikai műveletek elvégzésére. (Ezek a műveletek listázva megtalálhatóak a követelménylistában.)
 - Jogosultsága lesz az előzmények megtekintésére, ahol az általa elvégzett műveleteket visszatudja követni, ezeket visszatudja tölteni újra, majd további műveleteket tud majd végezni vele.
+
+5\. Fogalomszótár
+=========================
+**Reszponzív felület** - Mobilon, Tableten, PC-n igazodik a
+képernyőhöz a felület mérete, azaz több eszközön is probléma nélkül
+üzemelhet.
+
+**HTML** - A HTML egy leíró nyelv, melyet weboldalak készítéséhez fejlesztettek ki.
+
+**CSS** - A CSS egy stílusleíró nyelv. A HTML vagy XHTML típusú dokumentumok megjelenését írja le.
+
+**JavaScript** - A JavaScript egy programozási nyelv. Objektumorientált, prototípus-alapú szkriptnyelv.
+
+**Multiplatform** - Platformfüggetlenség. Több környezetben futtatható alkalmazás.
