@@ -22,10 +22,15 @@ A mai világban már rengeteg dolgot tudunk elvégezni a különböző elektroni
 4\. Igényelt Üzleti Folyamatok 
 ===============================
 
-1. Alapvető műveletekkel való számolás, és négyzet,gyök,maradék
-   1. Ezen számok pontos kíírása
-   2. Nem csak egész számok kezelése
-   3. Ezen számok és műveletek pontos tárolása
+1. Alapvető műveletekkel való számolás, és négyzet,gyök,maradék\
+--> Ezen számok pontos kíírása\
+--> Nem csak egész számok kezelése\
+--> Ezen számok és műveletek pontos tárolása
+2. Online elérhető, ingyenesen használható rendszer kialakítása\
+--> Reszponzív webes megjelenése, mind számítógépről mind pedig mobilról
+3. Egyszerűen használható, átlátható design\
+--> Letisztult egyszerű kinézet\
+--> Egyszerű betűtípus használata
 
 5\. Rendszerre Vonatkozó Szabályok
 ===============================
