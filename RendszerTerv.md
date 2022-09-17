@@ -55,12 +55,6 @@ de hordozható eszközökön (okostelefonok,táblagépek) is működni fog.
 ● Fejlesztői eszközök:
 - Visual Studio Code
 
-# Absztrakt Domain Modell
-
-# Architekturális terv
-
-# Implementációs terv
-
 6\. Tesztterv
 ==============
 Még mielőtt egy alkalmazás bármilyen végfelhasználóhoz kerülhet nagyon fontos szerepet tölthet be a teszttervek.
@@ -106,3 +100,6 @@ Operációs rendszer:
 A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges (Google Chrome, Firefox, Opera, Safari, Microsoft Edge), külön szoftver nem kell hozzá.
 
 A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
+
+10\. Absztrakt Domain Modell
+===================
