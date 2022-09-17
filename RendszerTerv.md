@@ -1,4 +1,15 @@
-# Rendszer Célja
+1\. Rendszer Célja
+==============
+
+Alkalmazásunk letiszult, illetve egyszerű célokkal rendelkezik.
+
+A mindennapokban előforduló számolásokban könnyíti meg a dolgunkat.
+
+Mi sem letisztultabb és egyszerűbb annál, hogy elindítjuk az alkalmazást és már számolhatunk is.
+
+Annak érdekében, hogy átlátható maradjon az alkalmazás, a design-ra nagy figyelmet szentelünk. A mostanában divatos szimpla design-t fogjuk alkalmazni.
+
+Az egyszerűség részét képezi az, hogy egy olyan számológép alkalmazást hozunk létre, melynek használatához fiókösszekapcsolás illetve regisztráció nem szükséges.
 
 # Üzleti folyamatok modellje
 
