@@ -118,7 +118,7 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 ### Általános megjelenés
 
 Mivel a megrendelőnek fontos az, hogy a számológép reszponzív legyen, ahol csak lehet **Bootstrap**et használunk
-az egyszerű CSS stíluslapokban megvalósítás érdekében. 
+a CSS stíluslapokban az egyszerű megvalósítás érdekében. 
 
 ### Számológép számítási előzmények
 
@@ -130,7 +130,7 @@ akkor a legrégebbi előzmények törlésre kerülnek.
 
 ### Bemenet kezelése
 
-A bemenet 
+A bemenet egyszerű stringként lesz kezelve. Fontos, hogy betűket ne tartalmazzon.
 
 ### Teljes bemenet törlése
 
