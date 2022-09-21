@@ -42,7 +42,7 @@ Tüneményes felhasználói felület
 4\. Funkcionális terv
 ===================
 
-Webalkalmazásunk célja, hogy az alkalmazottaink munkafolyamatainak során felmerülő számítási problémákat már ne csak papíron tudják elvégezni, hanem a webalkalmazásunkban is.
+A webalkalmazás célja, hogy a megrendelő munkafolyamatainak során felmerülő számítási problémákat már ne csak papíron tudják elvégezni, hanem a webalkalmazásunkban is.
 Ennek a megoldásnak köszönhetően ezek a folyamatok gyorsabbak lesznek, illetve kevesebb lesz a hibás megoldások esélye is.
 
 **Törekedünk az alkalmazás:**
@@ -106,10 +106,7 @@ Operációs rendszer:
 
 -   Windows 10 21H2 stabil
 
-7\. Architekturális terv
-===================
-
-8\. Implementációs terv
+7\. Implementációs terv
 ===================
 
 A rendszer egyetlen **HTML** oldalból áll, ehhez a szükséges funkcionalitást **Javascript** biztosítja majd.
@@ -117,6 +114,11 @@ Az odlal megjelenése és elrendezése egy **CSS** stíluslappal történik.
 Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és
 úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság,
 és könnyebb bővítés érdekében.
+
+### Általános megjelenés
+
+Mivel a megrendelőnek fontos az, hogy a számológép reszponzív legyen, ahol csak lehet **Bootstrap**et használunk
+a CSS stíluslapokban az egyszerű megvalósítás érdekében. 
 
 ### Számológép számítási előzmények
 
@@ -126,6 +128,9 @@ A megvalósításhoz egy sor adatszerkezet megfelelő lesz. Ha a felhasználó e
 akkor az előzmények tetejére kerül. Ha már több mint 15 előzmény van,
 akkor a legrégebbi előzmények törlésre kerülnek.
 
+### Bemenet kezelése
+
+A bemenet egyszerű stringként lesz kezelve. Fontos, hogy betűket ne tartalmazzon.
 
 ### Teljes bemenet törlése
 
@@ -139,14 +144,14 @@ A CE gombra kattintva az jelenlegi művelet törölni kell.
 
 A DEL gombra kattintva ez eddig beírt műveletből egyetlen karaktert kell törölni.
 
-9\. Telepítési terv
+8\. Telepítési terv
 ===================
 
 A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges (Google Chrome, Firefox, Opera, Safari, Microsoft Edge), külön szoftver nem kell hozzá.
 
 A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
 
-10\. Absztrakt Domain Modell
+9\. Absztrakt Domain Modell
 ===================
 ![Abszrakt Domain Modell](./AbsztraktDomainModell.png)
 

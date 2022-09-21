@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Számológép</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel='stylesheet' type='text/css' href='index.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src='index.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="calc" class="text-center">
+            <div id="display">
+                <div id="results"></div>
+                <p>0</p>
+                <div id="mathoperation">
+                    <p>0</p>
+                </div>
+            </div>
+            <div id="keyboard">
+                <div class="row">
+                    <div>
+                        <button class="btn btn-info" value="7">7</button>
+                        <button class="btn btn-info" value="8">8</button>
+                        <button class="btn btn-info" value="9">9</button>
+                        <button class="btn btn-danger" value="ce">CE</button>
+                        <button class="btn btn-danger" value="c">C</button>
+                        <button class="btn btn-info" value="previouses">Previouses</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <button class="btn btn-info" value="4">4</button>
+                        <button class="btn btn-info" value="5">5</button>
+                        <button class="btn btn-info" value="6">6</button>
+                        <button class="btn btn-warning" value="/">/</button>
+                        <button class="btn btn-warning" value="*">*</button>
+                        <button class="btn btn-dark" value="^">^</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <button class="btn btn-info" value="1">1</button>
+                        <button class="btn btn-info" value="2">2</button>
+                        <button class="btn btn-info" value="3">3</button>
+                        <button class="btn btn-warning" value="+">+</button>
+                        <button class="btn btn-warning" value="-">-</button>
+                        <button class="btn btn-dark" value="√">√</button>
+                    </div>
+
+                </div>
+                <div class="row last-row">
+                    <div>
+                        <button class="btn btn-info" value="0">0</button>
+                        <button class="btn btn-light" value="pi">π</button>
+                        <button class="btn btn-light" value="e">e</button>
+                        <button class="btn btn-warning" value=".">.</button>
+                        <button class="btn btn-dark" value="%">%</button>
+                        <button class="btn btn-success btn-result" value="=">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
