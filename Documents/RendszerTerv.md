@@ -149,3 +149,18 @@ A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
 10\. Absztrakt Domain Modell
 ===================
 ![Abszrakt Domain Modell](./AbsztraktDomainModell.png)
+
+11\. Fogalomszótár
+------------------------------
+
+* **Frontend:**
+Frontend-nek számít minden, amit egy weboldalon látsz: funkciók, dizájnelemek, felépítés.
+
+* **HTML:**
+A HTML (angolul: HyperText Markup Language, „hiperszöveges jelölőnyelv”) egy leíró nyelv, melyet weboldalak készítéséhez fejlesztettek ki.
+
+* **CSS:**
+A CSS (Cascading Style Sheets, magyarul: „lépcsőzetes stíluslapok”) a számítástechnikában egy stílusleíró nyelv, mely a HTML vagy XHTML típusú strukturált dokumentumok megjelenését írja le.
+
+* **JavaScript:**
+A JavaScript programozási nyelv egy objektumorientált, prototípus-alapú szkriptnyelv, amelyet weboldalakon elterjedten használnak.
