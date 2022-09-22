@@ -58,7 +58,12 @@ CLEAR.addEventListener("click",()=>{
 
 DEL.addEventListener("click",()=>{
     const old_len = RESULT.innerText.length;
+    if(old_len -1== 0){
+        RESULT.innerText = "0";
+        return;
+    }
     RESULT.innerText = RESULT.innerText.substring(0,old_len-1);
+    
 })
 
 PI_.addEventListener("click",()=>{
