@@ -11,7 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
-    <script src='index.js'></script>
 </head>
 
 <body>
@@ -27,9 +26,9 @@
             <div id="keyboard">
                 <div class="row">
                     <div>
-                        <button class="btn btn-info" value="7">7</button>
-                        <button class="btn btn-info" value="8">8</button>
-                        <button class="btn btn-info" value="9">9</button>
+                        <button class="btn btn-info number" value="7">7</button>
+                        <button class="btn btn-info number" value="8">8</button>
+                        <button class="btn btn-info number" value="9">9</button>
                         <button class="btn btn-danger" value="ce">CE</button>
                         <button class="btn btn-danger" value="c">C</button>
                         <button class="btn btn-info" value="previouses">Previouses</button>
@@ -37,9 +36,9 @@
                 </div>
                 <div class="row">
                     <div>
-                        <button class="btn btn-info" value="4">4</button>
-                        <button class="btn btn-info" value="5">5</button>
-                        <button class="btn btn-info" value="6">6</button>
+                        <button class="btn btn-info number" value="4">4</button>
+                        <button class="btn btn-info number" value="5">5</button>
+                        <button class="btn btn-info number" value="6">6</button>
                         <button class="btn btn-warning" value="/">/</button>
                         <button class="btn btn-warning" value="*">*</button>
                         <button class="btn btn-dark" value="^">^</button>
@@ -47,9 +46,9 @@
                 </div>
                 <div class="row">
                     <div>
-                        <button class="btn btn-info" value="1">1</button>
-                        <button class="btn btn-info" value="2">2</button>
-                        <button class="btn btn-info" value="3">3</button>
+                        <button class="btn btn-info number" value="1">1</button>
+                        <button class="btn btn-info number" value="2">2</button>
+                        <button class="btn btn-info number" value="3">3</button>
                         <button class="btn btn-warning" value="+">+</button>
                         <button class="btn btn-warning" value="-">-</button>
                         <button class="btn btn-dark" value="√">√</button>
@@ -58,9 +57,9 @@
                 </div>
                 <div class="row last-row">
                     <div>
-                        <button class="btn btn-info" value="0">0</button>
-                        <button class="btn btn-light" value="pi">π</button>
-                        <button class="btn btn-light" value="e">e</button>
+                        <button class="btn btn-info number" value="0">0</button>
+                        <button id="pi" class="btn btn-light" value="pi">π</button>
+                        <button id="euler" class="btn btn-light" value="e">e</button>
                         <button class="btn btn-warning" value=".">.</button>
                         <button class="btn btn-dark" value="%">%</button>
                         <button class="btn btn-success btn-result" value="=">=</button>
@@ -68,6 +67,7 @@
                 </div>
             </div>
         </div>
+        <script src="index.js"></script>
 </body>
 
 </html>
