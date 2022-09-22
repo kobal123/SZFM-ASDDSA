@@ -12,11 +12,12 @@ const NINE = document.getElementById("9");
 const DEL = document.getElementById("delete");
 const CLEAR = document.getElementById("clear");
 const CLEAR_ENTRY = document.getElementById("clear-entry");
-const PI_ = document.getElementById("pi")
+const PI_ = document.getElementById("pi");
+const EULER = document.getElementById("euler");
 
 const pi = Math.PI.toFixed(5);
 
-const RESULT = document.getElementById("result");
+const RESULT = document.getElementById("results");
 let wasConstantClicked = false;
 
 
@@ -62,7 +63,7 @@ DEL.addEventListener("click",()=>{
 
 PI_.addEventListener("click",()=>{
 
-    RESULT.innerText = pi.toString();
+    RESULT.innerText = Math.PI.toFixed(5).toString();
     wasConstantClicked = true;
 });
 
