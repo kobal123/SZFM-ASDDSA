@@ -1,3 +1,24 @@
+#calc{
+    width: 80%;
+}
+
+#history-data{
+    max-height: 400px;
+    max-width: 120px;
+    overflow: auto;
+}
+
+#results,#previous-entry{
+    text-align: right;
+   
+}
+
+#results{
+    padding-right: 1.3em;
+}
+#previous-entry{
+    padding-right: 1.8em;
+}
 
 /* maven-pro-regular - latin */
 @font-face {
@@ -9,15 +30,16 @@
   }
 
 body .btn{
-    width: 150px;
-    height: 150px;
-    min-width: 50px;
-    min-height: 70px;
+    width: 14vw;
+    height: 14vw;
+    max-width: 100px;
+    max-height: 100px;
     border-radius: 0;
     border: 1.5px solid #1f1f1f;
     padding: 0;
     font-family: Maven Pro;
 }
+
 
 div{
     font-family: Maven Pro;
@@ -27,3 +49,31 @@ div{
     background-color: #212529;
     color: white;
 }
+
+.history-data-entry{
+    background-color: #212529;
+    color: white;
+    padding-top: 1em;
+}
+
+#history{
+    background-color: #212529;
+    color: white;
+}
+
+#results{
+    font-size: 1.4rem;
+
+}
+
+#previous-entry{
+    font-size: 0.9rem;
+
+}
+
+@media only screen and (max-width: 720px) {
+    #history, #history>* {
+      max-width: 0;
+      max-height: 0;
+    }
+  }
