@@ -63,6 +63,18 @@ Array.from(numbers).forEach(
     }
 );
 
+function errorAnimation(){
+      document.getElementById('results').animate([
+        {color: 'red'},
+        {transform: 'translateX(-5%)'},
+        {transform: 'translateX(5%)'},
+        {transform: 'translateX(0%)'}
+      ], {
+        duration: 1300,
+        iterations: 1
+      })
+}
+
 function clearDisplay(){
     console.log("clearing the display");
     PREVIOUS_ENTRY.innerText = "";
@@ -139,6 +151,12 @@ const applyOperation = () =>{
         }
         PREVIOUS_ENTRY.innerText +=" " + RESULT.innerText + " " + "="; 
         RESULT.innerText = computation.toString();
+
+        if(RESULT.innerText === 'NaN'){
+            RESULT.innerText = 'Not A Number!';
+            errorAnimation();
+        }
+
         computation_finished = true;
 //TODO: eredmény elmentése az előzményekbe        
 }

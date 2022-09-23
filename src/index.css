@@ -1,7 +1,29 @@
+
+/* maven-pro-regular - latin */
+@font-face {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('/fonts/maven-pro-v32-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  }
+
 body .btn{
-    width: 10px;
+    width: 150px;
+    height: 150px;
     min-width: 50px;
     min-height: 70px;
     border-radius: 0;
     border: 1.5px solid #1f1f1f;
+    padding: 0;
+    font-family: Maven Pro;
+}
+
+div{
+    font-family: Maven Pro;
+}
+
+#display{
+    background-color: #212529;
+    color: white;
 }
