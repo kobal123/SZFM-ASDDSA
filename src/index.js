@@ -21,6 +21,7 @@ const pi = Math.PI.toFixed(5);
 const RESULT = document.getElementById("results");
 const PREVIOUS_ENTRY = document.getElementById("previous-entry");
 const HISTORY_DATA = document.getElementById("history-data");
+const DOT = document.getElementById("dot");
 
 let wasConstantClicked = false;
 let currentOperation = "";
@@ -261,3 +262,11 @@ EULER.addEventListener("click",()=>{
     wasConstantClicked = true;
 })
 
+
+DOT.addEventListener("click", (e)=>{
+    if(RESULT.innerText.includes(".")){
+        return;
+    }
+    RESULT.innerText += ".";
+
+});
