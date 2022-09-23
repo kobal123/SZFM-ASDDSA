@@ -20,11 +20,13 @@ const pi = Math.PI.toFixed(5);
 
 const RESULT = document.getElementById("results");
 const PREVIOUS_ENTRY = document.getElementById("previous-entry");
+const HISTORY_DATA = document.getElementById("history-data");
 
 let wasConstantClicked = false;
 let currentOperation = "";
 let computation_finished = false;
 let beforeComputation = false;
+let errorHappened = false;
 
 let calculatorHistory = [];
 
@@ -89,6 +91,7 @@ function resetVariables(){
     currentOperation = "";
     computation_finished = false;
     beforeComputation = false;
+    PREVIOUS_ENTRY.innerText = "​";
 }
 
 function clearCurrentInput(){
@@ -140,12 +143,22 @@ const applyOperation = () =>{
             computation = prev * current
             break
         case '/':
+            if(current == 0){
+                clearCurrentInput();
+                clearDisplay();
+                resetVariables();
+                RESULT.innerText = "Nullával nem lehet osztani";
+                errorHappened = true;
+                return;
+            }
             computation = prev / current
             break
         default:
             return
         }
     
+        computation = computation.toFixed(5);
+
         if(computation_finished){
             PREVIOUS_ENTRY.innerText = `${prev} ${currentOperation} ${current} =`;
             RESULT.innerText = computation.toString();
@@ -161,6 +174,9 @@ const applyOperation = () =>{
         if(RESULT.innerText === 'NaN'){
             RESULT.innerText = 'Not A Number!';
             errorAnimation();
+            //clearCurrentInput();
+            clearDisplay();
+            //resetVariables();
         }
 
         computation_finished = true;
@@ -171,6 +187,27 @@ const applyOperation = () =>{
         
 }
 
+function renderHistoryData(){
+    HISTORY_DATA.innerHTML = "";
+    calculatorHistory.forEach(data =>{
+        console.log("adding elements")
+
+        let data_element = document.createElement('div');
+        let prev = document.createElement('div');
+        let result = document.createElement('div');
+        prev.innerText = data['operation'];
+        result.innerText = data['result'];
+
+        data_element.appendChild(prev);
+        data_element.appendChild(result);
+        data_element.classList.add("history-data-entry");
+        
+
+        HISTORY_DATA.appendChild(data_element);
+        console.table(HISTORY_DATA.children)
+    });
+}
+
 function addToHistory(history){
 
     if(calculatorHistory.length == 3){
@@ -178,6 +215,8 @@ function addToHistory(history){
     }
     calculatorHistory.push(history);
     console.table(calculatorHistory);
+    renderHistoryData();
+
 }
 
 CLEAR_ENTRY.addEventListener("click",()=>{
