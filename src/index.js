@@ -201,7 +201,8 @@ const applyOperation = () =>{
 
 function renderHistoryData(){
     HISTORY_DATA.innerHTML = "";
-    calculatorHistory.forEach(data =>{
+    
+    calculatorHistory.slice().reverse().forEach(data =>{
         console.log("adding elements")
 
         let data_element = document.createElement('div');
@@ -222,8 +223,8 @@ function renderHistoryData(){
 
 function addToHistory(history){
 
-    if(calculatorHistory.length == 3){
-        calculatorHistory = calculatorHistory.slice(1,3);
+    if(calculatorHistory.length == 15){
+        calculatorHistory = calculatorHistory.slice(1,15);
     }
     calculatorHistory.push(history);
     console.table(calculatorHistory);
