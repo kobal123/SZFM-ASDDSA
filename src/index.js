@@ -23,11 +23,15 @@ const PREVIOUS_ENTRY = document.getElementById("previous-entry");
 const HISTORY_DATA = document.getElementById("history-data");
 const DOT = document.getElementById("dot");
 
+
+const MATH_FUNCTIONS = document.getElementsByClassName("function");
+
 let wasConstantClicked = false;
 let currentOperation = "";
 let computation_finished = false;
 let beforeComputation = false;
 let errorHappened = false;
+let currentMathFunction = "";
 
 let calculatorHistory = [];
 
@@ -157,6 +161,9 @@ const applyOperation = () =>{
         case 'mod':
             computation = prev % current;
             break;
+        case '^':
+            computation = Math.pow(prev,current);
+            break;
         default:
             return
         }
@@ -270,3 +277,26 @@ DOT.addEventListener("click", (e)=>{
     RESULT.innerText += ".";
 
 });
+
+
+Array.from(MATH_FUNCTIONS).forEach(button =>{
+    button.addEventListener("click",(e)=>{
+        
+        applyMathFunction(button.innerText);
+    })
+})
+
+
+
+function applyMathFunction(mathFunction){
+    if(currentMathFunction === ""){
+        console.log(mathFunction);
+        return;
+    }
+
+    switch(mathFunction){
+        case "√":
+    }
+
+
+}
