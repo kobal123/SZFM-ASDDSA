@@ -26,6 +26,8 @@ let currentOperation = "";
 let computation_finished = false;
 let beforeComputation = false;
 
+let calculatorHistory = [];
+
 const numbers = document.getElementsByClassName("number");
 Array.from(numbers).forEach(
     number =>{
@@ -147,9 +149,13 @@ const applyOperation = () =>{
         if(computation_finished){
             PREVIOUS_ENTRY.innerText = `${prev} ${currentOperation} ${current} =`;
             RESULT.innerText = computation.toString();
+            addToHistory({
+                "operation":PREVIOUS_ENTRY.innerText,
+                "result":computation
+            });        
             return;
         }
-        PREVIOUS_ENTRY.innerText +=" " + RESULT.innerText + " " + "="; 
+        PREVIOUS_ENTRY.innerText += " " + RESULT.innerText + " " + "="; 
         RESULT.innerText = computation.toString();
 
         if(RESULT.innerText === 'NaN'){
@@ -158,7 +164,20 @@ const applyOperation = () =>{
         }
 
         computation_finished = true;
-//TODO: eredmény elmentése az előzményekbe        
+        addToHistory({
+            "operation":PREVIOUS_ENTRY.innerText,
+            "result":computation
+        });        
+        
+}
+
+function addToHistory(history){
+
+    if(calculatorHistory.length == 3){
+        calculatorHistory = calculatorHistory.slice(1,3);
+    }
+    calculatorHistory.push(history);
+    console.table(calculatorHistory);
 }
 
 CLEAR_ENTRY.addEventListener("click",()=>{
@@ -198,3 +217,4 @@ EULER.addEventListener("click",()=>{
     RESULT.innerText = Math.E.toFixed(5).toString();
     wasConstantClicked = true;
 })
+
