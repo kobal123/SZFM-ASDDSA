@@ -152,13 +152,17 @@ const applyOperation = () =>{
                 return;
             }
             computation = prev / current
-            break
+            break;
+        case 'mod':
+            computation = prev % current;
+            break;
         default:
             return
         }
     
+        if(!Number.isInteger(computation)){
         computation = computation.toFixed(5);
-
+        }
         if(computation_finished){
             PREVIOUS_ENTRY.innerText = `${prev} ${currentOperation} ${current} =`;
             RESULT.innerText = computation.toString();
