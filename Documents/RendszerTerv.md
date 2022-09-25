@@ -84,6 +84,16 @@ Maga a tesztterv segítségével tudunk kritikus funckiók helyes működésér�
 
 Maga a szoftver kiadása előtt 2 külön fajta tesztet szeretnénk végrehajtani ez által biztosítani azt hogy a szoftver képes legyen az elvártakra és hibamentesen fusson.
 
+### Tesztelési jegyzőkönyv sablon
+
+A tesztelések jegyzőkönyveléséhez az alábbi sablont fogjuk használni.
+
+| Lépések | Elvárt eredmény | Kapott eredmény| Böngésző |PASS / FAIL|Elvégezte|Dátum|
+|---------|-----------------|----------------|----------|-----------|-----|-----|
+|<li>Lépés 1 <li>Lépés 2| Egy elvárt eredmény| Egy kapott eredmény| <li>Google chrome <li>verzió : 123.1 |FAIL| Teszt Elek| 2022.09.23|
+|<li>Lépés 1 <li>Lépés 2| Másik elvárt eredmény|Másik kapott eredmény|<li>Firefox <li>verzió : 102.14  |PASS | Teszt Telek| 2022.09.25|
+
+
 ### Fejlesztői Teszt
 
 A fejlesztői tesztet kifejezetten azok fogják végezni akik az szoftvert fejlesztették.
