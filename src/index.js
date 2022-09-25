@@ -45,7 +45,6 @@ Array.from(numbers).forEach(
                 clearCurrentInput();
                 resetVariables();
             }
-            
             if(beforeComputation){
                 clearCurrentInput();
                 beforeComputation = false;
@@ -153,6 +152,7 @@ const applyOperation = () =>{
                 clearDisplay();
                 resetVariables();
                 RESULT.innerText = "Nullával nem lehet osztani";
+                errorAnimation();
                 errorHappened = true;
                 return;
             }
@@ -184,7 +184,7 @@ const applyOperation = () =>{
         RESULT.innerText = computation.toString();
 
         if(RESULT.innerText === 'NaN'){
-            RESULT.innerText = 'Not A Number!';
+            RESULT.innerText = 'Nem egy szám!';
             errorAnimation();
             //clearCurrentInput();
             clearDisplay();
@@ -289,15 +289,38 @@ Array.from(MATH_FUNCTIONS).forEach(button =>{
 
 
 
-function applyMathFunction(mathFunction){
-    if(currentMathFunction === ""){
+function applyMathFunction(mathFunction) {
+
+    if (currentMathFunction === "") {
         console.log(mathFunction);
+    }
+
+    computation = 0;
+    current = RESULT.innerText;
+
+    switch (mathFunction) {
+        case "√":
+            computation = Math.sqrt(RESULT.innerText);
+            break;
+        default:
+            return;
+    }
+
+    if (computation < 0) {
+        errorAnimation();
+        RESULT.innerText = "Gyök alatt negatív szám!";
         return;
     }
 
-    switch(mathFunction){
-        case "√":
+    if (!Number.isInteger(computation)) {
+        computation = computation.toFixed(5);
     }
 
-
+    PREVIOUS_ENTRY.innerText = ` ${mathFunction} (${current}) =`;
+    RESULT.innerText =  computation.toString();
+    addToHistory({
+        "operation": PREVIOUS_ENTRY.innerText,
+        "result": computation
+    });
+    return;
 }
