@@ -205,9 +205,9 @@ function renderHistoryData(){
     calculatorHistory.slice().reverse().forEach(data =>{
         console.log("adding elements")
 
-        let data_element = document.createElement('li');
-        let prev = document.createElement('li');
-        let result = document.createElement('li');
+        let data_element = document.createElement('div');
+        let prev = document.createElement('div');
+        let result = document.createElement('div');
         prev.innerText = data['operation'];
         result.innerText = data['result'];
 
