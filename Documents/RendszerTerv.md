@@ -16,9 +16,9 @@ Az egyszerűség részét képezi az, hogy egy olyan számológép alkalmazást 
 
 - Üzleti szereplők: USER, Fejlesztők
 - Üzleti folyamatok:
--- Számítások elvégzése
--- Gombok használata (számok bevitele, műveletek)
--- Hibakezelés! USER <-> Fejlesztők
+    - Számítások elvégzése
+    - Gombok használata (számok bevitele, műveletek)
+    - Hibakezelés! USER <-> Fejlesztők
 
 3\. Követelmények
 ===================
@@ -36,7 +36,10 @@ Alapvető konstant értékek tárolása: PI, Euler-féle szám
 
 Nem funkcionális követelmények:
 -------------------------
-Tüneményes felhasználói felület
+- Tüneményes felhasználói felület
+- Elfogadható válaszidő
+- Megbízhatóság
+- HTML, CSS, JavaScript programozási nyelven készüljön
 
 
 4\. Funkcionális terv
