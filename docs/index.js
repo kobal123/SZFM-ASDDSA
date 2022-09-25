@@ -205,9 +205,9 @@ function renderHistoryData(){
     calculatorHistory.slice().reverse().forEach(data =>{
         console.log("adding elements")
 
-        let data_element = document.createElement('div');
-        let prev = document.createElement('div');
-        let result = document.createElement('div');
+        let data_element = document.createElement('li');
+        let prev = document.createElement('li');
+        let result = document.createElement('li');
         prev.innerText = data['operation'];
         result.innerText = data['result'];
 
@@ -291,12 +291,19 @@ Array.from(MATH_FUNCTIONS).forEach(button =>{
 
 function applyMathFunction(mathFunction) {
 
+    computation = 0;
+    current = RESULT.innerText;
+    computation_finished = false;
+
     if (currentMathFunction === "") {
         console.log(mathFunction);
     }
-
-    computation = 0;
-    current = RESULT.innerText;
+    
+    if(computation_finished){
+        clearDisplay();
+        clearCurrentInput();
+        resetVariables();
+    }
 
     switch (mathFunction) {
         case "√":
@@ -322,5 +329,6 @@ function applyMathFunction(mathFunction) {
         "operation": PREVIOUS_ENTRY.innerText,
         "result": computation
     });
+    computation_finished = true;
     return;
 }

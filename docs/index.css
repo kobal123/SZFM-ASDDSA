@@ -1,5 +1,7 @@
 #calc{
     width: 80%;
+    min-width: 400px;
+    min-height: 400px;
 }
 
 #history-data{
