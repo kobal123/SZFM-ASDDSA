@@ -22,7 +22,7 @@ const RESULT = document.getElementById("results");
 const PREVIOUS_ENTRY = document.getElementById("previous-entry");
 const HISTORY_DATA = document.getElementById("history-data");
 const DOT = document.getElementById("dot");
-
+const NEGATE = document.getElementById("plus-minus");
 
 const MATH_FUNCTIONS = document.getElementsByClassName("function");
 
@@ -195,7 +195,7 @@ const applyOperation = () =>{
             
             resetVariables();
             computation_finished=true;    
-    
+            return;
         }
 
         computation_finished = true;
@@ -345,3 +345,18 @@ function applyMathFunction(mathFunction) {
     computation_finished = true;
     return;
 }
+
+
+NEGATE.addEventListener("click", (e)=>{
+
+    if(RESULT.innerText === "0"){
+        return;
+    }
+
+
+    if(RESULT.innerText[0] === "-"){
+        RESULT.innerText = RESULT.innerText.slice(1,RESULT.innerHTML.length);
+    }else{
+        RESULT.innerText = "-" + RESULT.innerText;
+    }
+})
