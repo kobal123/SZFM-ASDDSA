@@ -71,21 +71,22 @@ Array.from(numbers).forEach(
     }
 );
 
-function errorAnimation(){
+function errorAnimation(errorMsg){
+    RESULT.innerText = errorMsg;
       document.getElementById('results').animate([
         {color: 'red'},
         {transform: 'translateX(-5%)'},
         {transform: 'translateX(5%)'},
         {transform: 'translateX(0%)'}
       ], {
-        duration: 1300,
+        duration: 1000,
         iterations: 1
       })
 }
 
 function clearDisplay(){
     console.log("clearing the display");
-    PREVIOUS_ENTRY.innerText = "";
+    PREVIOUS_ENTRY.innerText = "​";
     computation_finished = false;
     currentOperation = '';
 }
@@ -95,6 +96,7 @@ function resetVariables(){
     currentOperation = "";
     computation_finished = false;
     beforeComputation = false;
+    errorHappened = false;
     PREVIOUS_ENTRY.innerText = "​";
 }
 
@@ -148,11 +150,14 @@ const applyOperation = () =>{
             break
         case '/':
             if(current == 0){
-                clearCurrentInput();
+                //clearCurrentInput();
                 clearDisplay();
+                
+                //RESULT.innerText = "Nullával nem lehet osztani";
+                errorAnimation("Nullával nem lehet osztani");
+                
                 resetVariables();
-                RESULT.innerText = "Nullával nem lehet osztani";
-                errorAnimation();
+                computation_finished=true;
                 errorHappened = true;
                 return;
             }
@@ -184,11 +189,13 @@ const applyOperation = () =>{
         RESULT.innerText = computation.toString();
 
         if(RESULT.innerText === 'NaN'){
-            RESULT.innerText = 'Nem egy szám!';
-            errorAnimation();
-            //clearCurrentInput();
             clearDisplay();
-            //resetVariables();
+                
+            errorAnimation("Nem egy szám!");
+            
+            resetVariables();
+            computation_finished=true;    
+    
         }
 
         computation_finished = true;
@@ -313,9 +320,15 @@ function applyMathFunction(mathFunction) {
             return;
     }
 
-    if (computation < 0) {
-        errorAnimation();
-        RESULT.innerText = "Gyök alatt negatív szám!";
+    if (parseFloat(RESULT.innerText) < 0) {
+        
+        clearDisplay();
+                
+        errorAnimation("Gyök alatt negatív szám!");
+        
+        resetVariables();
+        computation_finished=true;    
+        
         return;
     }
 
