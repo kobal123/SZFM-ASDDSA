@@ -14,6 +14,13 @@ const CLEAR = document.getElementById("clear");
 const CLEAR_ENTRY = document.getElementById("clear-entry");
 const PI_ = document.getElementById("pi");
 const EULER = document.getElementById("euler");
+const MOD = document.getElementById("mod");
+const CARET = document.getElementById("^");
+const DIVISON = document.getElementById("/");
+const MULTIPLY = document.getElementById("*");
+const ADDITION = document.getElementById("+");
+const ROOT = document.getElementById("root");
+const DEDUCTION = document.getElementById("-");
 
 const equalsBtn = document.getElementById("equals");
 const pi = Math.PI.toFixed(5);
@@ -40,6 +47,7 @@ Array.from(numbers).forEach(
     number =>{
         number.addEventListener('click',
         ()=>{
+            enbalesOperationsFunctions();
             if(computation_finished){
                 clearDisplay();
                 clearCurrentInput();
@@ -104,6 +112,33 @@ function clearCurrentInput(){
     RESULT.innerText = "";
 }
 
+function enbalesOperationsFunctions() {
+    MOD.classList.remove('disabled');
+    CARET.classList.remove('disabled');
+    DIVISON.classList.remove('disabled');
+    MULTIPLY.classList.remove('disabled');
+    ADDITION.classList.remove('disabled');
+    ROOT.classList.remove('disabled');
+    DEDUCTION.classList.remove('disabled');
+    EULER.classList.remove('disabled');
+    PI_.classList.remove('disabled');
+    NEGATE.classList.remove('disabled');
+    DOT.classList.remove('disabled');
+}
+
+function disablesOperationsFunctions() {
+    MOD.classList.add('disabled');
+    CARET.classList.add('disabled');
+    DIVISON.classList.add('disabled');
+    MULTIPLY.classList.add('disabled');
+    ADDITION.classList.add('disabled');
+    ROOT.classList.add('disabled');
+    DEDUCTION.classList.add('disabled');
+    EULER.classList.add('disabled');
+    PI_.classList.add('disabled');
+    NEGATE.classList.add('disabled');
+    DOT.classList.add('disabled');
+}
 
 const operations = document.getElementsByClassName("operator");
 
@@ -155,6 +190,8 @@ const applyOperation = () =>{
                 
                 //RESULT.innerText = "Nullával nem lehet osztani";
                 errorAnimation("Nullával nem lehet osztani");
+                
+                disablesOperationsFunctions();
                 
                 resetVariables();
                 computation_finished=true;
@@ -328,7 +365,7 @@ function applyMathFunction(mathFunction) {
         
         resetVariables();
         computation_finished=true;    
-        
+        disablesOperationsFunctions();
         return;
     }
 
