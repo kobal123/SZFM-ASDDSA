@@ -295,7 +295,12 @@ DEL.addEventListener("click",()=>{
         return;
     }
     const old_len = RESULT.innerText.length;
-    if(old_len -1== 0){
+    if(old_len == 2 && RESULT.innerText[0] === "-"){
+        RESULT.innerText = "0";
+        return;
+    }
+    
+    if(old_len -1== 0 ){
         RESULT.innerText = "0";
         return;
     }
