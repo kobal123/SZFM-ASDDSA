@@ -58,6 +58,9 @@ Array.from(numbers).forEach(
                 beforeComputation = false;
             }
             
+            if(RESULT.innerText.length==15){
+                return;
+            }
 
             if(RESULT.innerText === '0'){
                 if(number.innerText === '0')
