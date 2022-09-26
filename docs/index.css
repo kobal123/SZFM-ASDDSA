@@ -5,8 +5,7 @@
 }
 
 #history-data{
-    max-height: 400px;
-    max-width: 120px;
+    max-height: 540px;
     overflow: auto;
 }
 
@@ -42,6 +41,11 @@ body .btn{
     font-family: Maven Pro;
 }
 
+body .btn.disabled{
+    color:#fff;
+    border-color: #272727;
+    background-color: #000000;
+}
 
 div{
     font-family: Maven Pro;
@@ -62,6 +66,7 @@ div{
 #history{
     background-color: #212529;
     color: white;
+    max-width: 120px;
 }
 
 #results{
@@ -75,7 +80,6 @@ div{
 
 @media only screen and (max-width: 720px) {
     #history, #history>* {
-      max-width: 0;
-      max-height: 0;
+      display: none;
     }
   }
