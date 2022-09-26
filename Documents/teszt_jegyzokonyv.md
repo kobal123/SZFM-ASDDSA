@@ -29,4 +29,4 @@
 |Negációs gomb| A jelenleg beírt számból negatívat csinál ha pozitív, pozitívat ha negatív| A gomb megfelelően működik mindkettő esetben | Microsoft Edge 105.0.1343.50 | PASS | Kósa Balázs | 2022.09.26|
 |Bármilyen egyjegyű pozitív szám beírása, negálása, majd a DEL gomb megnyomása| A kijelzőn 0 jelenik meg, nem marad ott egy "-" jel| A DEL gomb megfelelően működik, a szám eltűnik és 0 marad a helyén| Microsoft Edge 105.0.1343.50 | PASS | Kósa Balázs | 2022.09.26|
 |Negációs gombra kattintás, ha 0 a jelenlegi input| A gomb nem csinál semmit | A gomb nem csinál semmit|Microsoft Edge 105.0.1343.50 | PASS | Kósa Balázs | 2022.09.26|
-|A 0 gomb folyamatos kattintása, ha jelenleg is 0 az input| A gomb nem csinál semmit, bármennyi kattintás után is 0 az eredmény| Az eredmény nem változik, 0 marad |A gomb nem csinál semmit|Edge 105.0.1343.50 | PASS | Kósa Balázs | 2022.09.26| 
+|A 0 gomb folyamatos kattintása, ha jelenleg is 0 az input| A gomb nem csinál semmit, bármennyi kattintás után is 0 az eredmény| Az eredmény nem változik, 0 marad |Microsoft Edge 105.0.1343.50 | PASS | Kósa Balázs | 2022.09.26|
